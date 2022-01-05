@@ -1,7 +1,6 @@
 *, *::after, *::before{
 box-sizing: border-box;
 font-family: Gotham Rounded, sans-serif;
-padding:2px;
 
 }
 
@@ -16,14 +15,29 @@ body{
     background-image: url(/img/clockbckgr.png);
     border-radius: 50%;
     border: 2px solid rgb(92, 79, 46);
+    position:relative;
+    margin:auto;
 
 }
 
-.clock .numbers{
+.clock .numbers {
+    --rotation:0;
     position:absolute;
     width:100%;
     height:100%;
     text-align: center;
 
-    transform: rotate(30deg);
+    transform: rotate(var(--rotation));
 }
+
+.clock .num1{--rotation:30deg;}
+.clock .num2{--rotation:60deg;}
+.clock .num3{--rotation:90deg;}
+.clock .num4{--rotation:120deg;}
+.clock .num5{--rotation:150deg;}
+.clock .num6{--rotation:180deg;}
+.clock .num7{--rotation:210deg;}
+.clock .num8{--rotation:240deg;}
+.clock .num9{--rotation:270deg;}
+.clock .num10{--rotation:300deg;}
+.clock .num11{--rotation:330deg;}
