@@ -5,14 +5,16 @@ font-family: Gotham Rounded, sans-serif;
 }
 
 body{
-    background-image: url("/img/bckgr.png");
+    /*background-image: url("/img/bckgrnew.jpg");*/
+     background-image: url("/img/backgrnew2.JPG");
     background-size: cover;
 }
 
 .clock{
-    width:450px;
-    height: 450px;
-    background-image: url(/img/clockbckgr.png);
+    width:600px;
+    height: 600px;
+    /*background-image: url(/img/clockbckgr.png);*/
+    background-image: url(/img/clockbackgr.JPG);
     border-radius: 50%;
     border: 2px solid rgb(92, 79, 46);
     position:relative;
