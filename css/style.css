@@ -1,0 +1,29 @@
+*, *::after, *::before{
+box-sizing: border-box;
+font-family: Gotham Rounded, sans-serif;
+padding:2px;
+
+}
+
+body{
+    background-image: url("/img/bckgr.png");
+    background-size: cover;
+}
+
+.clock{
+    width:450px;
+    height: 450px;
+    background-image: url(/img/clockbckgr.png);
+    border-radius: 50%;
+    border: 2px solid rgb(92, 79, 46);
+
+}
+
+.clock .numbers{
+    position:absolute;
+    width:100%;
+    height:100%;
+    text-align: center;
+
+    transform: rotate(30deg);
+}
