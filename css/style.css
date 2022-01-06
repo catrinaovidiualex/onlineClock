@@ -6,7 +6,7 @@ font-family: Gotham Rounded, sans-serif;
 
 body{
     /*background-image: url("/img/bckgrnew.jpg");*/
-     background-image: url("/img/backgrnew2.JPG");
+     background-image: url("/img/bckgrnew3.jpg");
     background-size: cover;
 }
 
@@ -43,3 +43,16 @@ body{
 .clock .num9{--rotation:270deg;}
 .clock .num10{--rotation:300deg;}
 .clock .num11{--rotation:330deg;}
+
+.clock .handle{
+    --rotation:30;
+    position:absolute;
+    bottom:50%;
+    left:50%;
+    width: 10px;
+    min-height: 45%;
+    background-color: rgb(66, 42, 5);
+    transform:translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+    transform-origin: bottom;
+
+}
